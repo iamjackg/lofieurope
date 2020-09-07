@@ -79,18 +79,19 @@ def country_page():
 
     country_id = flask.request.args.get("country_id", [])
     if not country_id:
-        return '', 400
+        return "", 400
 
     try:
         country_data = all_country_data[country_id]
     except KeyError:
-        return '', 404
+        return "", 404
 
     return flask.render_template(
         "country.html",
         country_id=country_id,
         country_name=country_data["name"],
         image_author=country_data["image_author"],
+        image_author_link=country_data["image_author_link"],
         image_file=flask.url_for(
             "static", filename=f"countries/{country_data['image_file']}"
         ),

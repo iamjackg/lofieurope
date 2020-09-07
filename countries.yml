@@ -3,6 +3,7 @@ italy:
   coordinates: [373, 605]
   image_file: "italy.png"
   image_author: "u/freak-000"
+  image_author_link: "https://reddit.com/user/freak-000"
   image_points:
     - title: "Giuseppe Conte"
       description: "Prime Minister of Italy and renowned sex symbol."
