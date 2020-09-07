@@ -1,0 +1,22 @@
+italy:
+  name: Italy
+  coordinates: [373, 605]
+  image_file: "italy.png"
+  image_author: "u/freak-000"
+  image_points:
+    - title: "Giuseppe Conte"
+      description: "Prime Minister of Italy and renowned sex symbol."
+      coordinates: [41, 58]
+    - title: "Nord Sud Ovest Est"
+      description: "Album by Italian pop band 883."
+      coordinates: [23, 234]
+    - title: "Alberto Angela"
+      description: "Paleontologist and TV host. Beloved by all for his documentaries and all-around wholesome demeanor."
+      coordinates: [62, 426]
+    - title: "Campioni del Mondo"
+      description: "Poster commemorating Italy's victory at the 2006 FIFA World Cup."
+      coordinates: [781, 72]
+    - title: "IL: Dizionario Italiano-Latino"
+      description: "The most popular Italian to Latin dictionary, required material in many high schools."
+      coordinates: [862, 146]
+

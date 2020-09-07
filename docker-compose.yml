@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  lofi-europe:
+    build: .
+    expose:
+      - "80"
+    volumes:
+      - "./static:/app/static"
+      - "./countries.yml:/app/countries.yml"

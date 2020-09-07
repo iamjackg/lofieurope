@@ -1,0 +1,19 @@
+.interactive-image {
+    /*width: 929px;*/
+    /*height: 755px;*/
+    /*!*height: 100%;*!*/
+    /*background: url("europe-smaller.jpg");*/
+    /*background-size: auto 100%;*/
+}
+
+.interactive-image .hotspot {
+    text-shadow: 0 0 5px #000;
+}
+
+.interactive-image .hotspot:hover {
+    text-shadow: 0 0 6px #000;
+}
+
+.interactive-image .item {
+    min-width: 210px;
+}
