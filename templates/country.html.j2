@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include "stylesheets.html.j2" %}
+
+    <title>Lo-Fi {{ country_name }}</title>
+
+</head>
+<body class="text-center">
+<!-- Main container of a scene -->
+<div class="cover-container d-flex align-items-center w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" target="_blank" href="https://github.com/iamjackg/lofieurope">Contribute on GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1>lo-fi {{ country_name }}</h1>
+        <figure class="figure">
+            <div class="interactive-image" id="main-map">
+                <img src="{{ image_file }}" class="img-fluid" alt="Image for {{ country_name }}" id="main-image">
+            </div>
+            <figcaption class="figure-caption">
+                Image by <a target="_blank" href="{{ image_author_link }}">{{ image_author }}</a>
+            </figcaption>
+        </figure>
+    </main>
+
+    {% include "footer.html.j2" %}
+    {% include "js-dependencies.html.j2" %}
+
+    <script>
+        // Plugin activation
+        $(document).ready(function () {
+            let mainImage = $("#main-image");
+            let horizontalRatio = mainImage.width() / mainImage.get(0).naturalWidth;
+            let verticalRatio = mainImage.height() / mainImage.get(0).naturalHeight;
+            $.getJSON("api/countries/{{ country_id }}", function (data) {
+                $.each(data, function (item) {
+                    data[item].position.left *= horizontalRatio;
+                    data[item].position.left -= 25;
+                    data[item].position.top *= verticalRatio;
+                    data[item].position.top -= 10;
+                });
+                let thing = $("#main-map").interactiveImage(data, {
+                    shareBox: false,
+                    debug: false
+                });
+                thing.on('allDone', function (event) {
+                    $("#main-map .item").each(function (item_index, item) {
+                        $(this).show();
+                        if ($(this).offset().left < 0) {
+                            $(this).css('left', 0)
+                        }
+                        $(this).hide();
+                    });
+                });
+                //$.when(waiters[0]).done(function (x) {console.log($("#main-map .item"));});
+            });
+
+        });
+    </script>
+</div>
+</body>
+</html>

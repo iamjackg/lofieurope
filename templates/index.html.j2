@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    {% include "stylesheets.html.j2" %}
+
+    <title>Lo-Fi Europe</title>
+
+</head>
+<body class="text-center">
+<!-- Main container of a scene -->
+<div class="cover-container d-flex align-items-center w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="/about">About</a>
+                <a class="nav-link" target="_blank" href="https://github.com/iamjackg/lofieurope">Contribute on GitHub</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1>lo-fi europe</h1>
+        <figure class="figure">
+            <div class="interactive-image" id="main-map">
+                <img src="static/europe-map.jpg" class="img-fluid" alt="Map of Europe" id="main-image">
+            </div>
+            <figcaption class="figure-caption">
+                Map by <a href="https://www.reddit.com/user/real_mitya/" target="_blank">u/real_mitya</a>
+            </figcaption>
+        </figure>
+    </main>
+
+    {% include "footer.html.j2" %}
+    {% include "js-dependencies.html.j2" %}
+
+    <script>
+        // Plugin activation
+        $(document).ready(function () {
+            let mainImage = $("#main-image");
+            let horizontalRatio = mainImage.width() / mainImage.get(0).naturalWidth;
+            let verticalRatio = mainImage.height() / mainImage.get(0).naturalHeight;
+            $.getJSON("api/map/countries", function (data) {
+                $.each(data, function (item) {
+                    console.log(data[item]);
+                    data[item].position.left *= horizontalRatio;
+                    data[item].position.left -= 25;
+                    data[item].position.top *= verticalRatio;
+                    data[item].position.top -= 10;
+                });
+                $("#main-map").interactiveImage(data, {
+                    shareBox: false,
+                    debug: true
+                });
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

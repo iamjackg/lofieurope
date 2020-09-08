@@ -34,8 +34,8 @@ def get_map_countries():
                 "title": country_details["name"],
                 "description": "",
                 "position": {
-                    "left": country_details["coordinates"][0] - 25,
-                    "top": country_details["coordinates"][1] - 10,
+                    "left": country_details["coordinates"][0],
+                    "top": country_details["coordinates"][1],
                 },
                 "link": {
                     "url": flask.url_for("country_page", country_id=country_name),
@@ -64,8 +64,8 @@ def get_country_data(country_id):
                 "title": point_data["title"],
                 "description": point_data["description"],
                 "position": {
-                    "left": point_data["coordinates"][0] - 25,
-                    "top": point_data["coordinates"][1] - 10,
+                    "left": point_data["coordinates"][0],
+                    "top": point_data["coordinates"][1],
                 },
             }
         )
@@ -87,7 +87,7 @@ def country_page():
         return "", 404
 
     return flask.render_template(
-        "country.html",
+        "country.html.j2",
         country_id=country_id,
         country_name=country_data["name"],
         image_author=country_data["image_author"],
@@ -100,12 +100,12 @@ def country_page():
 
 @app.route("/")
 def main_page():
-    return flask.render_template("index.html")
+    return flask.render_template("index.html.j2")
 
 
 @app.route("/about")
 def about_page():
-    return flask.render_template("about.html")
+    return flask.render_template("about.html.j2")
 
 
 if __name__ == "__main__":
