@@ -50,10 +50,10 @@
                     data[item].position.left -= 25;
                     data[item].position.top *= verticalRatio;
                     data[item].position.top -= 10;
+                    data[item].sticky = true;
                 });
                 $("#main-map").interactiveImage(data, {
                     shareBox: false,
-                    debug: true
                 });
             });
         });
