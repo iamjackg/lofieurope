@@ -20,4 +20,32 @@ italy:
     - title: "IL: Dizionario Italiano-Latino"
       description: "The most popular Italian to Latin dictionary, required material in many high schools."
       coordinates: [862, 146]
-
+    - title: "Pinguini Tattici Nucleari"
+      description: "A popular indie rock/pop band."
+      coordinates: [797, 210]
+    - title: "Topolino"
+      description: "Flagship Disney comics magazine in Italy. You'll find at least one issue in everybody's house."
+      coordinates: [854, 335]
+    - title: "Olivetti"
+      description: >-
+        Once a world-leading technology company, it achieved success with the popular Lettera series of typewriters
+        and later expanded into various other products, from computers to printers and calculators.
+      coordinates: [140, 550]
+    - title: "Cedrata Tassoni"
+      description: >-
+        Citron-based soft drink, it's so ingrained in the collective consciousness that the company has been airing the same
+        commercial since the 1980s.
+      coordinates: [866, 67]
+    - title: "Firenze"
+      description: >-
+        Does this really need an explanation?
+      coordinates: [319, 136]
+    - title: "Basilico"
+      description: >-
+        Every self-respecting Italian has a basil plant somewhere.
+      coordinates: [264, 347]
+    - title: "Moka"
+      description: >-
+        Italy's favourite coffee-making implement. Invented in 1933 by Alfonso Bialetti, it produces coffee that's a bit stronger
+        than espresso but has a very different flavour profile.
+      coordinates: [435, 443]
