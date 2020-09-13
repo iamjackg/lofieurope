@@ -1,51 +1,128 @@
+bulgaria:
+  coordinates: [546, 598]
+  image_author: "u/chaotic-neutral"
+  image_author_link: "https://www.reddit.com/u/chaotic-neutral/"
+  image_file: "bulgaria.jpg"
+  image_points: []
+  name: Bulgaria
+croatia:
+  coordinates: [416, 579]
+  image_author: "u/contrive_"
+  image_author_link: "https://www.reddit.com/u/contrive_/"
+  image_file: "croatia.png"
+  image_points: []
+  name: Croatia
+estonia:
+  coordinates: [492, 293]
+  image_author: "u/dwarjam"
+  image_author_link: "https://www.reddit.com/u/dwarjam/"
+  image_file: "estonia.jpg"
+  image_points: []
+  name: Estonia
+finland:
+  coordinates: [477, 181]
+  image_author: "u/c4nni"
+  image_author_link: "https://www.reddit.com/u/c4nni/"
+  image_file: "finland.jpg"
+  image_points: []
+  name: Finland
+greece:
+  coordinates: [516, 669]
+  image_author: "u/arjunks"
+  image_author_link: "https://www.reddit.com/u/arjunks/"
+  image_file: "greece.jpg"
+  image_points: []
+  name: Greece
+hungary:
+  coordinates: [457, 523]
+  image_author: "u/oliviaisarobot"
+  image_author_link: "https://www.reddit.com/u/oliviaisarobot/"
+  image_file: "hungary.png"
+  image_points: []
+  name: Hungary
+iceland:
+  coordinates: [118, 151]
+  image_author: "u/lobenhard"
+  image_author_link: "https://www.reddit.com/u/lobenhard/"
+  image_file: "iceland.jpg"
+  image_points: []
+  name: Iceland
 italy:
-  name: Italy
   coordinates: [373, 605]
-  image_file: "italy.png"
   image_author: "u/freak-000"
   image_author_link: "https://reddit.com/user/freak-000"
+  image_file: "italy.png"
   image_points:
-    - title: "Giuseppe Conte"
-      description: "Prime Minister of Italy and renowned sex symbol."
-      coordinates: [41, 58]
-    - title: "Nord Sud Ovest Est"
-      description: "Album by Italian pop band 883."
-      coordinates: [23, 234]
     - title: "Alberto Angela"
-      description: "Paleontologist and TV host. Beloved by all for his documentaries and all-around wholesome demeanor."
       coordinates: [62, 426]
-    - title: "Campioni del Mondo"
-      description: "Poster commemorating Italy's victory at the 2006 FIFA World Cup."
-      coordinates: [781, 72]
-    - title: "IL: Dizionario Italiano-Latino"
-      description: "The most popular Italian to Latin dictionary, required material in many high schools."
-      coordinates: [862, 146]
-    - title: "Pinguini Tattici Nucleari"
-      description: "A popular indie rock/pop band."
-      coordinates: [797, 210]
-    - title: "Topolino"
-      description: "Flagship Disney comics magazine in Italy. You'll find at least one issue in everybody's house."
-      coordinates: [854, 335]
-    - title: "Olivetti"
+      description: "Paleontologist and TV host. Beloved by all for his documentaries and all-around wholesome demeanor."
+    - title: "Basilico"
+      coordinates: [264, 347]
       description: >-
-        Once a world-leading technology company, it achieved success with the popular Lettera series of typewriters
-        and later expanded into various other products, from computers to printers and calculators.
-      coordinates: [140, 550]
+        Every self-respecting Italian has a basil plant somewhere.
+    - title: "Campioni del Mondo"
+      coordinates: [781, 72]
+      description: "Poster commemorating Italy's victory at the 2006 FIFA World Cup."
     - title: "Cedrata Tassoni"
+      coordinates: [866, 67]
       description: >-
         Citron-based soft drink, it's so ingrained in the collective consciousness that the company has been airing the same
         commercial since the 1980s.
-      coordinates: [866, 67]
     - title: "Firenze"
+      coordinates: [319, 136]
       description: >-
         Does this really need an explanation?
-      coordinates: [319, 136]
-    - title: "Basilico"
-      description: >-
-        Every self-respecting Italian has a basil plant somewhere.
-      coordinates: [264, 347]
+    - title: "Giuseppe Conte"
+      coordinates: [41, 58]
+      description: "Prime Minister of Italy and renowned sex symbol."
+    - title: "IL: Dizionario Italiano-Latino"
+      coordinates: [862, 146]
+      description: "The most popular Italian to Latin dictionary, required material in many high schools."
     - title: "Moka"
+      coordinates: [435, 443]
       description: >-
         Italy's favourite coffee-making implement. Invented in 1933 by Alfonso Bialetti, it produces coffee that's a bit stronger
         than espresso but has a very different flavour profile.
-      coordinates: [435, 443]
+    - title: "Nord Sud Ovest Est"
+      coordinates: [23, 234]
+      description: "Album by Italian pop band 883."
+    - title: "Olivetti"
+      coordinates: [140, 550]
+      description: >-
+        and later expanded into various other products, from computers to printers and calculators.
+        Once a world-leading technology company, it achieved success with the popular Lettera series of typewriters
+    - title: "Pinguini Tattici Nucleari"
+      coordinates: [797, 210]
+      description: "A popular indie rock/pop band."
+    - title: "Topolino"
+      coordinates: [854, 335]
+      description: "Flagship Disney comics magazine in Italy. You'll find at least one issue in everybody's house."
+  name: Italy
+poland:
+  coordinates: [444, 430]
+  image_author: "u/fluffiwe"
+  image_author_link: "https://www.reddit.com/u/fluffiwe/"
+  image_file: "poland.png"
+  image_points: []
+  name: Poland
+romania:
+  coordinates: [535, 538]
+  image_author: "u/marccolo"
+  image_author_link: "https://www.reddit.com/u/marccolo/"
+  image_file: "romania.png"
+  image_points: []
+  name: Romania
+scotland:
+  coordinates: [195, 337]
+  image_author: "u/poozu"
+  image_author_link: "https://www.reddit.com/u/poozu/"
+  image_file: "scotland.jpg"
+  image_points: []
+  name: Scotland
+serbia:
+  coordinates: [485, 576]
+  image_author: "u/ArchMonster932"
+  image_author_link: "https://www.reddit.com/u/ArchMonster932/"
+  image_file: "serbia.jpg"
+  image_points: []
+  name: Serbia

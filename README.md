@@ -12,5 +12,5 @@ Yeah, the code's not great. I put this together in a few hours.
 
 If you want to add your country's image to the site, you can open a pull request!
 
-- Add your image to the [`static/countries`](static/countries) folder. **Resize it to a maximum width/height of 900x600 please!**
+- Add your image to the [`static/countries`](static/countries) folder.
 - Add all the necessary information to [`countries.yml`](countries.yml). You can look at the other countries and copy what they did. All the fields are mandatory for now!
